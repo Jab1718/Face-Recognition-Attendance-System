@@ -1,0 +1,9 @@
+FRAME_SKIP = 10               # lấy 1 frame mỗi 10 frames
+DETECTION_CONFIDENCE = 0.7    # ngưỡng lọc face quality
+RECOGNITION_THRESHOLD = 0.45  # cosine similarity tối thiểu để nhận diện
+MODEL_DIR = "models"
+DATABASE_PATH = "database/faces.pkl"
+THUMBNAIL_DIR = "database/thumbnails"
+ENROLL_DURATION_SEC = 10
+MIN_FRAMES_STABLE = 5         # dưới ngưỡng → trạng thái "needs_update"
+API_URL = "http://127.0.0.1:8001"  # 8001 tránh xung đột port 8000 bị process cũ chiếm
